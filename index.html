@@ -1,44 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html style="height:100vh;">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <title>S Chat</title>
+	<title>S Chat</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
 </head>
 <body>
-    <center>
-        <br>
-        <br>
-        <br>
-        <br>
-        <table>
-            <td>
-                <center>
-                    <img src="S Chat Icon.png" alt="">
-                    <h1 id="website_name"><b>S Chat</b></h1>
-                    <h3>School Communication</h3>
-                </center>
-            </td>
-            <td>
-                <center>
-                    <br>
-                    <h2>Sign Up / Log In</h2>
-                    <br>
-                    <br>
-                    <input type="text" placeholder="Enter your Username over here" id="username">
-                    <br>
-                    <br>
-                    <button class="btn btn-dark" onclick="sign_up_login_in()">Sign Up / Log In</button>
-                </center>
-            </td>
-        </table>
-    </center>
-    <script src="main.js"></script>
+<center>
+	<h1 class="header">	
+		S Chat	
+        <sup>
+	        <img style="width:80px;height:80px;" src="m2.png">
+	    </sup>
+    </h1>
+	<div style="margin-bottom:25px;" class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+	    <img style="border-radius:25px;width:150px;height:60px;margin-top:25px;" src="S Chat Icon.png" class="logo">
+	    <h3>See what is happening in School</h3>
+    	<h4>Join S Chat today</h4>
+	    <div class="form-group">
+		    <label >User Name:</label>
+	    	<input id="username" class="form form-control" type="text">
+	    </div>
+	    <button style="margin-bottom:20px;" id="login_button" onclick="login()" class="btn btn-primary">Log In</button>
+	</div>
+</center>
 </body>
 </html>
