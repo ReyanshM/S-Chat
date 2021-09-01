@@ -1,12 +1,12 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyCTZoxgoQrmCVR7VgCwH6K_9JCOV5tpY_A",
-    authDomain: "fir-chat-31461.firebaseapp.com",
-    databaseURL: "https://fir-chat-31461-default-rtdb.firebaseio.com",
-    projectId: "fir-chat-31461",
-    storageBucket: "fir-chat-31461.appspot.com",
-    messagingSenderId: "378038055970",
-    appId: "1:378038055970:web:83bfedd8be6e5f29dd467b"
-  };
+    apiKey: "AIzaSyATqTw4hn06WnqP5KX5Y8ktb33pmcC7ww8",
+    authDomain: "combook-52018.firebaseapp.com",
+    databaseURL: "https://combook-52018-default-rtdb.firebaseio.com",
+    projectId: "combook-52018",
+    storageBucket: "combook-52018.appspot.com",
+    messagingSenderId: "142429411578",
+    appId: "1:142429411578:web:a36a00a2beb1f666cbd143"
+};
 firebase.initializeApp(firebaseConfig);
 var MyDB=firebase.database(),username=localStorage.getItem("username"),message,roomname=localStorage.getItem("roomname");
 function logout(){
