@@ -6,10 +6,27 @@
     margin-top: 80px;
 }
 body{
-    background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);   
+    background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);
 }
 #logout{
     float:right;
     font-size:20px;
     margin-right:20px;
+}
+.input_div_message_page
+{
+	position: fixed;bottom:5px;background: rgba(255,255,255,0.8);padding-bottom:20px;z-index:100;margin-left:-112px;
+}
+.input_div_message_page label
+{
+	color: black;
+}
+.input_div_message_page #msg
+{
+	width: 80%;
+}
+.input_div_message_page button
+{
+	margin-top: 15px;
+	width: 50%; 
 }

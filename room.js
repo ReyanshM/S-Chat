@@ -14,10 +14,11 @@ function logout(){
     localStorage.removeItem("username");
     localStorage.removeItem("roomname");
 }
+var room_name=localStorage.getItem("Room_name"),user_name=localStorage.getItem("username");
 function send(){
-    message=document.getElementById("").value;
-    MyDB.ref("/"+roomname).push({
-        "name" : username,
+    message=document.getElementById("msg").value;
+    MyDB.ref("/"+room_name).push({
+        "name" : user_name,
         "message" : message,
         "likes" : 0
     });
