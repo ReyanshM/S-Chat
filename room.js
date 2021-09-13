@@ -23,3 +23,30 @@ function send(){
         "likes" : 0
     });
 }
+function getData() {
+    MyDB.ref("/"+room_name).on('value',function(data){
+      document.getElementById('output').innerHTML="";
+      var obj=data.val();
+      console.log(data.val());
+      for(key in obj){
+          if(key!="purpose"){
+              console.log(key);
+              document.getElementById('output').innerHTML+=`
+              <div id="${key}" class="key">
+              <br>
+              <label>${obj[key]['name']}</label>
+              <br>
+              <label>${obj[key]['message']}</label>
+              <br>
+              <button onclick="likes()" class="btn btn-warning"><span class="glyphicon">&#xe125;</span>&nbsp;&nbsp;Like</button>
+              &nbsp;&nbsp;&nbsp;<label>${obj[key]['likes']}</label>
+              <br>
+              <br>
+              </div>
+              <hr>`;
+          }
+      }
+      
+    });
+  }
+  getData();
